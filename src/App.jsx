@@ -1,10 +1,15 @@
 import React from 'react'
+import Navbar from './componets/Navbar'
+import Hero from './componets/Hero'
+import Highlights from './componets/Highlights'
 
 const App = () => {
   return (
-    <div>
-      kisan
-    </div>
+    <main className='bg-black'>
+      <Navbar/>
+      <Hero/>
+      <Highlights/>
+    </main>
   )
 }
 

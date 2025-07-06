@@ -11,17 +11,17 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0%; */
+  /* padding: 0%; */
   box-sizing: border-box;
 }
 
 body {
-  color: white;
+  color: white;  /* White text for dark theme */
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #000;
+  background: black;
   border-color: #3b3b3b;
   user-select: none;
 }
@@ -30,11 +30,12 @@ canvas {
   touch-action: none;
 }
 
-.scrim-max-width {
+.screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+  /* background-color: aqua; */
 }
 
 @layer utilities {
@@ -43,7 +44,7 @@ canvas {
   }
 
   .nav-height {
-    @apply h-[calc(100vh-60px)]
+    @apply h-[calc(100vh-60px)] 
   }
 
   .btn {
@@ -95,7 +96,8 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
+    @apply text-center font-semibold text-3xl text-gray-100 
+    opacity-0 max-md:mb-10
   }
 
   .hiw-title {
